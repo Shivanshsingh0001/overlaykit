@@ -1,0 +1,3 @@
+D:\Software\MSYS2\mingw64\bin\cmake.exe -E rm -f CMakeFiles\overlaykit.dir/objects.a
+D:\Software\MSYS2\mingw64\bin\ar.exe qc CMakeFiles\overlaykit.dir/objects.a @CMakeFiles\overlaykit.dir\objects1.rsp
+D:\Software\MSYS2\mingw64\bin\c++.exe -mwindows -Wl,--whole-archive CMakeFiles\overlaykit.dir/objects.a -Wl,--no-whole-archive -o overlaykit.exe -Wl,--out-implib,liboverlaykit.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\overlaykit.dir\linkLibs.rsp
