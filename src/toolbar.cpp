@@ -134,7 +134,7 @@ void Toolbar::UpdateLayout() {
         { BTN_UNDO, L"Undo" },
         { BTN_CLEAR, L"Clear All" },
         { BTN_TOGGLE_ALIGN, L"Change Alignment" },
-        { BTN_CLOSE, L"Exit Drawing" }
+        { BTN_CLOSE, L"Exit Application" }
     };
 
     const float btnSize = 28.0f;
@@ -311,7 +311,7 @@ void Toolbar::HandleClick(int btnId) {
             SetOrientation(m_orientation == ToolbarOrientation::VERTICAL ? ToolbarOrientation::HORIZONTAL : ToolbarOrientation::VERTICAL);
             break;
         case BTN_CLOSE:
-            m_overlay->SetDrawMode(false);
+            PostMessageW(m_overlay->GetHWND(), WM_CLOSE, 0, 0);
             break;
     }
 }

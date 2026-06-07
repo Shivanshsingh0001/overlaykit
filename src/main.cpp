@@ -69,11 +69,9 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
             );
         }
 
-        // Start overlay window in click-through mode
+        // Start overlay window in drawing mode directly on startup
         overlay.Show(true);
-        overlay.SetDrawMode(false);
-
-        OutputDebugStringA("OverlayKit started (overlay in PASSTHROUGH)\n");
+        overlay.SetDrawMode(true);
 
         // Message loop
         MSG msg;
@@ -85,7 +83,5 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
     // Shutdown GDI+
     Gdiplus::GdiplusShutdown(gdiplusToken);
-
-    OutputDebugStringA("OverlayKit shut down cleanly\n");
     return 0;
 }

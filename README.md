@@ -11,15 +11,20 @@ Whether you are hosting online classes, streaming technical tutorials, presentin
 
 ---
 
-## 🚀 1-Minute Quick Start (For Users)
+## 🚀 Quick Start & How to Run
 
-If you just want to run OverlayKit without dealing with compilation, follow these steps:
+OverlayKit runs interactively (like Epic Pen)—only launching when you run it, starting directly in drawing mode, and closing completely when you click the Close button on the toolbar.
 
-1.  **Download the Installer**: Go to the **Releases** tab on GitHub and download the latest `OverlayKitSetup.exe` (built via Inno Setup).
-2.  **Run the Setup**: Follow the modern wizard prompts. You can check the option to *"Run OverlayKit automatically when Windows starts"* if desired.
-3.  **Launch the App**: Once installed, OverlayKit runs quietly in your System Tray (look for the taskbar icon near your system clock).
-4.  **Activate drawing mode**: Press **`Ctrl + Alt + D`**. The mouse cursor will transform into a drawing crosshair, and a floating toolbar will slide onto your screen. You are now ready to draw!
-5.  **Return to clicking/typing**: Press **`Ctrl + Alt + D`** again to return to normal mouse interactions (passthrough mode). Your drawings stay visible on top, but clicks go directly through to your desktop applications.
+### Easiest Way to Run:
+1. Navigate to the project root folder [Scrim](file:///d:/Users/Lenovo/Documents/Git_Project/Scrim).
+2. Double-click the **`Run_OverlayKit.bat`** script.
+3. The script will automatically verify the build (rebuilding any new changes) and launch the program immediately.
+
+### How to Use:
+1. **Draw Immediately**: On startup, drawing mode is active. Your cursor turns into a crosshair and the floating toolbar slides onto the screen.
+2. **Toggle Click-Through**: Press **`Ctrl + Alt + D`** to switch between drawing mode and normal clicking/typing mode (where clicks go directly through to your background applications, but annotations remain on top).
+3. **Exit the Program**: Hover over the Close button **(X)** at the bottom/right of the toolbar and click it to exit OverlayKit completely.
+
 
 ---
 
